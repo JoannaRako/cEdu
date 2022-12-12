@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(void){
+
+  char znak;
+
+  printf("Podaj znak: ");
+
+  scanf("%c", &znak);
+
+  printf("Kod ASCI znaku to: %d", znak);
+
+  return 0;
+}

@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <math.h>
+
+int n, i; 
+long int sum;
+
+int main(void) {
+
+printf("Wpisz liczbe (>1)\n");
+scanf("%d", &n);
+
+sum = 0;
+i = 1;
+
+while(i <= n){
+  sum = sum + pow(i, 2);
+  printf("%d: %li\n", i, sum);
+  i++;
+} 
+printf("Suma całkowita %li\n", sum);
+return 0;
+}

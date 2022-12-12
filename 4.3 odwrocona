@@ -1,0 +1,27 @@
+ #include <stdio.h>
+ #define ROZMIAR 8
+ int main()
+{
+  double tab[ROZMIAR] = {0.};
+  double temp;
+  int i = 0;
+
+printf ("Wpisz 8 elementow tablicy\n");
+
+do{
+  scanf("%lf", &tab[i++]);
+}while(i < ROZMIAR);
+  
+for(i = 0; i < ROZMIAR/2; i++){
+  temp = tab[i];
+  tab[i] = tab[ROZMIAR-i-1];
+  tab[ROZMIAR-i-1] = temp;
+  }
+ 
+printf ("ODWROCONA tablica:\n");
+
+  for (i = 0; i < ROZMIAR; i++) {
+    printf ("Element numer %d: %.2lf\n", i+1, tab[i]);
+  }
+  return 0;
+}

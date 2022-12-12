@@ -1,0 +1,32 @@
+#include <stdio.h>
+#define ROZMIAR 10
+
+ int main()
+{
+  float tab[ROZMIAR] = {0.};
+  float max,t;
+  int i = 0;
+
+  printf("Wpisz maksymalnie %d elementów tablicy\n", ROZMIAR);
+
+  do{
+    printf("Podaj %d element: ", i+1);
+    scanf("%f", &t);
+    if(t <= 0){
+      break;
+    }
+    tab[i++] = t;
+  }while(i < ROZMIAR);
+
+  max = tab[0];
+
+  for(i = 1; i < ROZMIAR; i++){
+    if(tab[i] > max){
+    max = tab[i];
+    }
+  }
+
+  printf("element maksymalny to %.2f\n",max);
+
+  return 0;
+}

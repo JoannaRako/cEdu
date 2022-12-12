@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void) {
+
+unsigned long long liczba;
+int i = 0;
+
+  printf("Wpisz liczbe\n");
+  
+  scanf("%llu", &liczba);
+
+do{
+  liczba = liczba / 10;
+  i++;
+}while(liczba > 0);
+   
+printf("%d\n", i);
+
+    return 0;
+}

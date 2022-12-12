@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+char a = 'a';
+char b = '!';
+int c = 7;
+int d = 8;
+float e = 1.5;
+float f = 2.3;
+double g = 32423423.645565;
+double h = 3.543656;
+
+
+int main(void) {
+
+  printf("%c\n", a);
+  printf("%c\n", b);
+  printf("%d\n", c);
+  printf("%d\n", d);
+  printf("%f\n", e);
+  printf("%f\n", f);
+  printf("%.10lf\n", g);
+  printf("%.10lf\n", h);
+
+  return 0;
+}

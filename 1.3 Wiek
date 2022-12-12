@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void){
+
+int p;
+int w = 23;
+
+p = w*365;
+
+printf("Wiek w latach: %i\n", w);
+printf("Wiek w dniach: ");
+printf("%i\n",p);
+
+return 0;
+
+}

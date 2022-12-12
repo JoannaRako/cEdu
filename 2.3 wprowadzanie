@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void){
+  
+  int liczba, przejscie = 0, ile = 3, odwrocona = 0, x;
+  printf("Wprowadz liczbe trzycyfrowa: ");
+  scanf("%d", &liczba);
+
+  while (przejscie < ile) {
+
+    x = liczba % 10;
+    odwrocona = odwrocona * 10 + x;
+    liczba /= 10;
+    przejscie++;
+    
+  }
+  printf("Odwrocona liczba: %d", odwrocona);
+
+  return 0;
+  
+}

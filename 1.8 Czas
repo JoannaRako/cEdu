@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+
+int sekundy;
+int godziny;
+int minuty;
+int pozostaleSekundy;
+
+printf("Podaj ilosc sekund: ");
+
+scanf("%d", &sekundy);
+
+godziny = floor(sekundy / 3600);
+minuty = floor(sekundy % 3600 / 60);
+pozostaleSekundy = floor(sekundy % 3600 % 60);
+
+printf("Czas wynosi: %d:%d:%d", godziny, minuty, pozostaleSekundy);
+
+}

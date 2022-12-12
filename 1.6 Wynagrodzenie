@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(void){
+
+float w;
+float eur = 4.53;
+float usd = 3.99;
+
+printf("Podaj Twoje wynagrodzenie: ");
+
+scanf("%f", &w);
+
+float roczneW = w * 12;
+float roczneWEur = roczneW * eur;
+float roczneWUsd = roczneW * usd;
+
+printf("Twoje roczne wynagrodzenie: %.2f\n", roczneW);
+printf("Twoje roczne wynagrodzenie w euro: %.2f\n", roczneWEur);
+printf("Twoje roczne wynagrodzenie w dolarach: %.2f\n", roczneWUsd);
+
+return 0;
+}

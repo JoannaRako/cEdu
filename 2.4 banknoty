@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void){
+  int banknoty[6] = {500, 200, 100, 50, 20, 10};
+  
+  int kwota;
+  int ile;
+  
+  printf("Wprowadz kwote: ");
+  scanf("%d", &kwota);
+  
+  for(int i = 0; i < 6; i++) {
+    ile = kwota/banknoty[i];
+    printf("Nominal %d zl: %d \n", banknoty[i], ile);
+    kwota = kwota - ile * banknoty[i];
+  }
+  
+  printf("Bilon zl: %d", kwota);
+}

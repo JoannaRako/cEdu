@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(void) {
+
+int n;
+
+  printf("Wpisz liczbe (>1)\n");
+  scanf("%d", &n);
+
+if((n%2) == 0){
+
+  while(n > 0){
+    printf("Nastepna liczba naturalna: %d\n", n-2);
+    n = n-2;
+  }
+
+}else{
+
+  n = n-1;
+  printf("Nastepna liczba naturalna: %d\n", n);
+
+  while(n > 0){
+    printf("Nastepna liczba naturalna: %ld\n", n-2);
+    n = n-2;
+  }
+}
+    return 0;
+}

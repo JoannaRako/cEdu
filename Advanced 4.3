@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+unsigned long suma(unsigned long argument, unsigned long sum){
+
+sum = 0;
+
+do{
+  sum = sum + argument % 10;
+  argument = argument / 10;
+  }while(argument != 0);
+  return sum;
+}
+ 
+
+int main()
+{
+unsigned long argument, sum;
+
+  printf("Wprowadź argument: ");
+  scanf("%lu", &argument);
+
+  printf("Suma cyfr wynosi: %lu", suma(argument, sum));
+ 
+  return 0;
+}

@@ -1,0 +1,29 @@
+#include <stdio.h>
+#define ROZMIAR 10
+ 
+int podzielne(int tab[], int rozmiar, int k){
+
+  int n = 0, i = 0;
+
+  for(i = 0; i < rozmiar; i++){
+    if(tab[i] % k == 0){
+      n++;
+    }
+  }
+
+return n;
+}
+
+ int main(){
+  
+  int k;
+  
+  printf("Wprowadz dzielnik:");
+  scanf("%d", &k);
+  
+  int tab[ROZMIAR] = {21342,432432,6546,453,200,54345,32,51,654,876};
+
+  printf("Podzielne przez %d jest %d liczb", k, podzielne(tab, ROZMIAR, k));
+ 
+  return 0;
+}

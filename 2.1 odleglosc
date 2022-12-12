@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <math.h>
+
+const double mNaKm = 1.609;
+const double gNaL = 3.785;
+
+int main(void){
+
+double mile;
+double paliwo;
+double mp;
+double litr;
+
+printf("Podaj przebyta odleglosc w milach: ");
+scanf("%lf", &mile);
+
+printf("Podaj ilosc zuzytych galonow paliwa: ");
+scanf("%lf", &paliwo);
+
+mp = mile / paliwo;
+
+double kilometry = mile * mNaKm;
+double litry = paliwo * gNaL;
+
+double lk = 100 * litry / kilometry;
+
+printf("Zuzycie: %.1lf [mil/galon]\n", mp);
+printf("Zuzycie: %.1lf [l/100km]\n", lk);
+
+return 0;
+}

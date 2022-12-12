@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+const double g = 9.81;
+
+int main(void){
+
+double masa;
+
+printf("Podaj mase ( > 0): ");
+scanf("%lf", &masa);
+
+printf("Sila przyciagania ziemskiego na cialo o masie %.2lf, wynosi: %.2lf", masa, masa * g);
+
+return 0;
+}

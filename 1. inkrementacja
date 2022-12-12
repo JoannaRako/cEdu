@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int liczba, i = 0;
+
+int main(void) {
+
+  printf("Podaj liczbe całkowita\n");
+  scanf("%d", &liczba);
+  int dodana = liczba;
+
+while(i <= 10){
+    dodana += liczba;
+    printf("Nastepna liczba to: %d\n", dodana);
+    i++;
+}
+    return 0;
+}

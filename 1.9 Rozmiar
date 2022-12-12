@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void){
+
+char a;
+int b;
+float c;
+double d;
+
+printf("Rozmiar char: %lu\n", sizeof(a));
+printf("Rozmiar int: %lu\n", sizeof(b));
+printf("Rozmiar float: %lu\n", sizeof(c));
+printf("Rozmiar double: %lu\n", sizeof(d));
+
+return 0;
+}

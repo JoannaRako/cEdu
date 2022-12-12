@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main(){
+
+unsigned int i, rozmiar, p = 0, np = 0;
+
+printf("Podaj ilość elementów w ciągu, który chcesz wprowadzić: \n");
+  scanf("%u", &rozmiar);
+printf("Podaj elementy ciągu \n");
+  
+unsigned int tab[rozmiar];
+
+for(i = 0; i < rozmiar; i++){
+  scanf("%u", &tab[i]);
+  }
+
+for(i = 0; i < rozmiar; i++){
+  if(tab[i] % 2 == 0){
+    p++;
+  }else{
+    np++;
+  }
+}
+
+printf("Parzystych elementów jest: %u\n", p);
+printf("Nieparzystych elementów jest: %u", np);
+
+  return 0;
+}
